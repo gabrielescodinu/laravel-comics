@@ -15,30 +15,43 @@
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 <body>
+    <div class="blue"></div>
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
-                <a class="navbar-brand" href="{{ url('/') }}">
-                    <img width="70px" src="img/DC_Comics_logo.png" alt="">
+                <a class="navbar" href="{{ url('/') }}">
+                    <img width="100px" src="img/DC_Comics_logo.png" alt="">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
+                <div>
+                </div>
+
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
-
                     </ul>
 
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">
                         <!-- Authentication Links -->
+                        <div class="menu">
+                            <a class="nav-link" href="{{ url('/') }}">HOME</a>
+                            <a class="nav-link" href="{{ route('posts') }}">COMICS</a>
+                            <a class="nav-link" href="">MOVIES</a>
+                            <a class="nav-link" href="">SHOP</a>
+                            <a class="nav-link" href="">GAMES</a>
+                            <a class="nav-link" href="{{route('admin.posts.index')}}">ADMIN</a>
+                        </div>
+                        
                         @guest
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
@@ -75,6 +88,49 @@
         <main class="py-4">
             @yield('content')
         </main>
+
+        <footer>
+            <div class="sponsor">
+                <a href=""><i class="fas fa-journal-whills"></i></a>
+                <a href=""><i class="fas fa-tshirt"></i></a>
+                <a href=""><i class="fas fa-id-card"></i></a>
+                <a href=""><i class="fas fa-map-marker-alt"></i></a>
+            </div>
+            <div class="credits">
+                <div class="credits-container dc-links">
+                    <div>
+                        <h1>DC Comics</h1>
+                        <p>Characters</p>
+                        <p>Comics</p>
+                        <p>Movies</p>
+                        <p>Games</p>
+                    </div>
+                    <div>
+                        <h1>DC</h1>
+                        <p>Characters</p>
+                        <p>Comics</p>
+                    </div>
+                    <div>
+                        <h1>Sites</h1>
+                        <p>Characters</p>
+                        <p>Comics</p>
+                        <p>Movies</p>
+                    </div>
+                </div>
+                <div class="credits-container social">
+                    <a class="sign-up" href="">SIGN UP NOW!</a>
+                    <div class="follow">
+                        <h1>FOLLOW US</h1>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-youtube"></i>
+                        <i class="fab fa-pinterest"></i>
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </div>
 </body>
 </html>

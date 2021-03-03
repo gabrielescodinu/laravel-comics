@@ -1,6 +1,7 @@
 @extends('layouts.dashboard')
 
 @section('content')
+<div class="admin">
     <h1>Admin</h1>
 
     <a href="{{route('admin.posts.create')}}" class="btn btn-primary">Create a new post</a>
@@ -32,4 +33,5 @@
             @endforeach
         </tbody>
     </table>
+</div>
 @endsection

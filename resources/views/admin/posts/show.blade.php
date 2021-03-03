@@ -1,7 +1,13 @@
-@extends('layouts.dashboard')
+@extends('layouts.app')
 
 @section('content')
-    <h1>{{ $post->title }}</h1>
-    <p>{{ $post->body }}</p>
-    <img width="500px" src="{{ asset('storage/' .$post->cover ) }}" alt="">
+    <div class="show">
+        <img width="200px" src="{{ asset('storage/' .$post->cover ) }}" alt="">
+        <div class="show-info">            
+            <h1>{{ $post->title }}</h1>
+            <h3>U.S. Price: ${{ $post->price }}</h3>
+            <p>{{ $post->body }}</p>
+        </div>
+        
+    </div>
 @endsection
