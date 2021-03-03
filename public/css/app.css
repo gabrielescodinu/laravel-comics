@@ -10958,6 +10958,11 @@ a.text-dark:focus {
   margin-bottom: 10px;
 }
 
+.comics img:hover {
+  filter: grayscale(100%);
+  transition: 0.2s;
+}
+
 .comics h6 {
   color: #00a9d9;
   font-weight: bold;
@@ -10968,7 +10973,13 @@ a.text-dark:focus {
   text-transform: uppercase;
 }
 
-.flex-center {
-  display: flex;
+.novel {
+  background-color: #0282F9;
+  width: 600px;
+  margin-left: 400px;
+  padding: 10px;
+  color: white;
+  font-weight: bolder;
+  text-transform: uppercase;
 }
 

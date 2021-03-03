@@ -16,6 +16,10 @@
     }
     img {
         margin-bottom: 10px;
+        &:hover {
+            filter: grayscale(100%);
+            transition: 0.2s;
+        }
     }
     h6 {
         color: #00a9d9;
@@ -27,6 +31,12 @@
     }
 }
 
-.flex-center {
-    display: flex;
+.novel {
+    background-color: #0282F9;
+    width: 600px;
+    margin-left: 400px;
+    padding: 10px;
+    color: white;
+    font-weight: bolder;
+    text-transform: uppercase;
 }

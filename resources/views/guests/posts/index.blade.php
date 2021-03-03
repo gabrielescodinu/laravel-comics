@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <h1>Comics and Graphic Novel</h1>
+    <h1 class="novel">Comics and Graphic Novels</h1>
 
     <div class="comics">
         @foreach ($posts as $post)
