@@ -17,7 +17,7 @@ class CreatePostsTable extends Migration
             $table->id();
             $table->string('title');
             $table->string('body');
-            $table->string('cover')->nullable();
+            $table->string('cover');
             $table->float('price');
             $table->timestamps();
         });

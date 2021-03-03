@@ -10,6 +10,7 @@
                 <th>Title</th>
                 <th>Body</th>
                 <th>Cover</th>
+                <th>Action</th>
             </tr>
         </thead>
         <tbody>
@@ -19,6 +20,7 @@
                 <td>{{ $post->title }}</td>
                 <td>{{ $post->body }}</td>
                 <td> <img src="{{ asset('storage/' .$post->cover ) }}" alt=""> </td>
+                <td> <a href="" class="btn btn-primary">View<i class="fas fa-eye fa-xs fa-fw"></i></a> </td> 
             </tr>
                 
             @endforeach
