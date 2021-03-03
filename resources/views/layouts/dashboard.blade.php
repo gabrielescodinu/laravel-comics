@@ -24,7 +24,7 @@
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    {{ config('app.name', 'Laravel') }}
+                    <img width="70px" src="img/DC_Comics_logo.png" alt="">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
@@ -78,8 +78,6 @@
                     <ul class="list-unstyled">
                         <li><a href="{{ route('admin.index')}}"><i class="fas fa-tachometer-alt    "></i> Dashboard</a></li>
                         <li><a href="{{ route('admin.posts.index')}}"><i class="fas fa-book-open    "></i> Posts</a></li>
-                        <li><a href="#"><i class="fa fa-folder-open" aria-hidden="true"></i> Categories</a></li>
-                        <li><a href="#"><i class="fas fa-tag fa-lg fa-fw"></i> Tags</a></li>
                     </ul>
                 </div>
             <main class="col-xs-12 col-md-9 col-lg-10">

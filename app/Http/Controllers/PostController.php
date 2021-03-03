@@ -11,4 +11,10 @@ class PostController extends Controller
         $posts = Post::latest()->get();
         return view('guests.posts.index', compact('posts'));
     }
+
+    public function show(Post $post)
+    {
+        $posts = Post::All();
+        return view('guests.posts.show', compact('post'));
+    }
 }

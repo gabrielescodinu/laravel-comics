@@ -7,6 +7,26 @@
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
 
-img {
-    max-height: 100px;
+.comics {
+    display: flex;
+    background-color: #222222;
+    width: 100%;
+    div {
+        margin: 10px;
+    }
+    img {
+        margin-bottom: 10px;
+    }
+    h6 {
+        color: #00a9d9;
+        font-weight: bold;
+    }
+    h5 {
+        color: white;
+        text-transform: uppercase;
+    }
+}
+
+.flex-center {
+    display: flex;
 }

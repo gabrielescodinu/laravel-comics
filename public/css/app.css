@@ -10944,7 +10944,31 @@ a.text-dark:focus {
   }
 }
 
-img {
-  max-height: 100px;
+.comics {
+  display: flex;
+  background-color: #222222;
+  width: 100%;
+}
+
+.comics div {
+  margin: 10px;
+}
+
+.comics img {
+  margin-bottom: 10px;
+}
+
+.comics h6 {
+  color: #00a9d9;
+  font-weight: bold;
+}
+
+.comics h5 {
+  color: white;
+  text-transform: uppercase;
+}
+
+.flex-center {
+  display: flex;
 }
 
