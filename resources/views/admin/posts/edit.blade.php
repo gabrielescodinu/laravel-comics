@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <h1>Create a new post</h1>
+    <h1>Edit</h1>
 
     @if ($errors->any())
     <div class="alert alert-danger">
@@ -14,11 +14,12 @@
     </div>
     @endif
 
-    <form action="{{route('admin.posts.store')}}" method="post" enctype="multipart/form-data">
+    <form action="{{route('admin.posts.update', ['post' => $post->id])}}" method="post" enctype="multipart/form-data">
         @csrf
+        @method('PUT')
         <div class="form-group">
             <label for="title">Title</label>
-            <input class="form-control" type="text" name="title" id="title" value="{{ old('title')}}">
+            <input class="form-control" type="text" name="title" id="title" value="{{$post->title}}">
         </div>
         @error('title')
             <div class="alert alert-danger">{{ $message }}</div>
@@ -26,7 +27,7 @@
 
         <div class="form-group">
             <label for="body">Body</label>
-            <input class="form-control" type="body" name="body" id="body" value="{{ old('body')}}">
+            <input class="form-control" type="body" name="body" id="body" value="{{$post->body}}">
         </div>
         @error('body')
             <div class="alert alert-danger">{{ $message }}</div>
@@ -34,17 +35,17 @@
 
         <div class="form-group">
             <label for="price">Price</label>
-            <input class="form-control" type="price" name="price" id="price" value="{{ old('price')}}">
+            <input class="form-control" type="price" name="price" id="price" value="{{$post->price}}">
         </div>
         @error('price')
             <div class="alert alert-danger">{{ $message }}</div>
         @enderror
 
-        <div class="form-group">
+        <!-- <div class="form-group">
             <label for="cover">Cover</label>
-            <input type="file" class="form-control-file" name="cover" id="cover" value="{{ old('cover')}}">
+            <input type="file" class="form-control-file" name="cover" id="cover" value="">
             <small id="coverHelper" class="form-text text-muted">Add a cover image here</small>
-        </div>
+        </div> -->
 
 
 

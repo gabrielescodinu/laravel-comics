@@ -2,6 +2,7 @@
 
 @section('content')
     <div class="show">
+        <img width="200px" src="{{ asset('storage/' .$post->cover ) }}" alt="">
         <div class="show-info">            
             <h1>{{ $post->title }}</h1>
             <h3> <span>U.S. Price: ${{ $post->price }}</span> <a href="" class="buy-now"><span>BUY NOW</span></a></h3>
