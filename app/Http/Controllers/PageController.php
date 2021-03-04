@@ -25,5 +25,9 @@ class PageController extends Controller
     {
         return view('guests.posts.index');
     }
+    public function show()
+    {
+        return view('guests.posts.show');
+    }
 }
 

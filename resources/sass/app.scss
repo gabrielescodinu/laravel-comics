@@ -27,7 +27,10 @@
     align-items: center;
     justify-content: space-around;
     height: 800px;
-    filter: grayscale(100%);
+    img {
+        box-shadow: 10px 10px 20px #000000;
+        padding: 50px;
+    }
 }  
 .comics {
     display: flex;
@@ -43,6 +46,8 @@
         &:hover {
             filter: grayscale(100%);
             transition: 0.2s;
+            transition: 1s ease;
+            transform: translate(0, -50px);
         }
     }
     h6 {
@@ -85,6 +90,8 @@ body {
         &:hover {
             color: #0282F9;
             border-bottom: 5px solid #0282F9;
+            transition: 1s ease;
+            transform: translate(0, -10px);
         }
     }
 }
@@ -182,17 +189,21 @@ body {
     i {
         font-size: 60px;
         color: white;
+        &:hover {
+            color: grey;
+            transition: 0.2s;
+        }
     }
 }
 .credits {
-    height: 200px;
-    height: 400px;
-    background-color: #222222;
+    background-image: url('../../public/img/footer-background.jpg');
+    background-size: cover;
 }
 .credits-container {
     width: 60%;
     margin: auto;
     display: flex;
+    flex-wrap: wrap;
     div {
         margin-right: 50px;
     }
@@ -206,6 +217,7 @@ body {
     }
     .sign-up {
         margin-top: 50px;
+        margin-bottom: 100px;
         border: 2px solid #0282F9;
         padding: 10px;
         font-size: 30px;
@@ -225,6 +237,9 @@ body {
         color: white;
         font-size: 30px;
         margin-right: 20px;
+        &:hover {
+            color: grey;
+        }
     }
     .follow h1 {
         color: #0282F9;
@@ -244,6 +259,8 @@ body {
         font-weight: bold;
     }
     h3 {
+        display: flex;
+        justify-content: space-between;
         background-color: #55ba59;
         border: 2px solid grey;
         padding: 20px;
@@ -252,5 +269,14 @@ body {
     }
     img {
         box-shadow: 10px 10px 20px #000000;
+    }
+    .buy-now {
+        color: white;
+        font-weight: bold;
+        text-decoration: none;
+        &:hover {
+            color: orange;
+            transition: 0.2s;
+        }
     }
 }

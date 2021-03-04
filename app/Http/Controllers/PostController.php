@@ -13,8 +13,7 @@ class PostController extends Controller
     }
 
     public function show(Post $post)
-    {
-        $posts = Post::All();
+    {   
         return view('guests.posts.show', compact('post'));
     }
 }

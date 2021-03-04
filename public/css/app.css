@@ -10967,7 +10967,11 @@ a.text-dark:focus {
   align-items: center;
   justify-content: space-around;
   height: 800px;
-  filter: grayscale(100%);
+}
+
+.home img {
+  box-shadow: 10px 10px 20px #000000;
+  padding: 50px;
 }
 
 .comics {
@@ -10989,6 +10993,8 @@ a.text-dark:focus {
 .comics img:hover {
   filter: grayscale(100%);
   transition: 0.2s;
+  transition: 1s ease;
+  transform: translate(0, -50px);
 }
 
 .comics h6 {
@@ -11040,6 +11046,8 @@ body .admin a {
 .menu a:hover {
   color: #0282F9;
   border-bottom: 5px solid #0282F9;
+  transition: 1s ease;
+  transform: translate(0, -10px);
 }
 
 .must-reads {
@@ -11152,16 +11160,21 @@ body .admin a {
   color: white;
 }
 
+.sponsor i:hover {
+  color: grey;
+  transition: 0.2s;
+}
+
 .credits {
-  height: 200px;
-  height: 400px;
-  background-color: #222222;
+  background-image: url(/images/footer-background.jpg?235e177661eaa0baf194bcd7471226af);
+  background-size: cover;
 }
 
 .credits-container {
   width: 60%;
   margin: auto;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .credits-container div {
@@ -11180,6 +11193,7 @@ body .admin a {
 
 .credits-container .sign-up {
   margin-top: 50px;
+  margin-bottom: 100px;
   border: 2px solid #0282F9;
   padding: 10px;
   font-size: 30px;
@@ -11204,6 +11218,10 @@ body .admin a {
   margin-right: 20px;
 }
 
+.social .follow i:hover {
+  color: grey;
+}
+
 .social .follow h1 {
   color: #0282F9;
   font-weight: bold;
@@ -11222,6 +11240,8 @@ body .admin a {
 }
 
 .show h3 {
+  display: flex;
+  justify-content: space-between;
   background-color: #55ba59;
   border: 2px solid grey;
   padding: 20px;
@@ -11231,5 +11251,16 @@ body .admin a {
 
 .show img {
   box-shadow: 10px 10px 20px #000000;
+}
+
+.show .buy-now {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.show .buy-now:hover {
+  color: orange;
+  transition: 0.2s;
 }
 

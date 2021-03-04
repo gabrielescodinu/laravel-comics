@@ -6,7 +6,7 @@
     <div class="comics">
         @foreach ($posts as $post)
         <div>
-            <a href=""><img src="{{ asset('storage/' .$post->cover ) }}" alt=""></a>
+            <a href="{{ route('show', ['post'=> $post->id]) }}"><img src="{{ asset('storage/' .$post->cover ) }}" alt=""></a>
             <h5> {{ $post->title }} </h5>
             <h6> AVAILABLE NOW </h6>
         </div>            

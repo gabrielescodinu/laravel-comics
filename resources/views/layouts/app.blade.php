@@ -118,15 +118,15 @@
                     </div>
                 </div>
                 <div class="credits-container social">
-                    <a class="sign-up" href="">SIGN UP NOW!</a>
+                    <a class="sign-up" href="">SIGN UP NOW</a>
                     <div class="follow">
                         <h1>FOLLOW US</h1>
-                        <i class="fab fa-instagram"></i>
-                        <i class="fab fa-facebook"></i>
-                        <i class="fab fa-twitter"></i>
-                        <i class="fab fa-youtube"></i>
-                        <i class="fab fa-pinterest"></i>
-                        <i class="fas fa-map-marker-alt"></i>
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                        <a href=""><i class="fab fa-facebook"></i></a>
+                        <a href=""><i class="fab fa-twitter"></i></a>
+                        <a href=""><i class="fab fa-youtube"></i></a>
+                        <a href=""><i class="fab fa-pinterest"></i></a>
+                        <a href=""><i class="fas fa-map-marker-alt"></i></a>
                     </div>
                 </div>
             </div>
