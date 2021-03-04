@@ -10962,6 +10962,43 @@ a.text-dark:focus {
   background: #555;
 }
 
+.social-side {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  left: 0;
+}
+
+.social-side i {
+  font-size: 30px;
+  width: 50px;
+  height: 50px;
+  color: white;
+  padding: 30px;
+  transition: 1s;
+}
+
+.social-side i:hover {
+  transition: 0.5s;
+  width: 90px;
+}
+
+.social-side .fa-facebook-f {
+  background-color: #3b5998;
+}
+
+.social-side .fa-twitter {
+  background-color: #1da1f2;
+}
+
+.social-side .fa-pinterest {
+  background-color: #cb2027;
+}
+
+.social-side .fa-plus {
+  background-color: #ff6550;
+}
+
 .home {
   display: flex;
   align-items: center;
@@ -10979,15 +11016,19 @@ a.text-dark:focus {
   background-color: #222222;
   flex-wrap: wrap;
   width: 100%;
+  padding-top: 80px;
+  padding-bottom: 30px;
 }
 
 .comics div {
-  margin: 9px;
+  margin: 4px;
 }
 
 .comics img {
   margin-bottom: 10px;
   box-shadow: 10px 10px 20px #000000;
+  transition: 0.5s;
+  border: 5px solid transparent;
 }
 
 .comics img:hover {
@@ -10995,6 +11036,7 @@ a.text-dark:focus {
   transition: 0.2s;
   transition: 1s ease;
   transform: translate(0, -50px);
+  border: 5px solid white;
 }
 
 .comics h6 {
@@ -11005,6 +11047,7 @@ a.text-dark:focus {
 .comics h5 {
   color: white;
   text-transform: uppercase;
+  font-weight: bold;
 }
 
 .novel {
@@ -11013,6 +11056,8 @@ a.text-dark:focus {
   color: white;
   font-weight: bold;
   text-transform: uppercase;
+  position: absolute;
+  margin-left: 100px;
 }
 
 .blue {
@@ -11041,13 +11086,31 @@ body .admin a {
   font-weight: bold;
   margin: 0px 50px 0px 50px;
   border-bottom: 5px solid transparent;
+  transition: 0.5s;
 }
 
 .menu a:hover {
   color: #0282F9;
   border-bottom: 5px solid #0282F9;
-  transition: 1s ease;
+  transition: 0.5s ease;
   transform: translate(0, -10px);
+}
+
+.menu .search {
+  display: flex;
+  justify-content: baseline;
+  align-items: baseline;
+  margin-right: 100px;
+  margin-left: 50px;
+}
+
+.menu .search input {
+  border: none;
+  border-bottom: 5px solid #0282F9;
+  width: 100px;
+  outline: none;
+  color: black;
+  font-weight: bold;
 }
 
 .must-reads {
@@ -11091,6 +11154,7 @@ body .admin a {
 .must-reads img {
   height: 300px;
   box-shadow: 10px 10px 20px #000000;
+  transition: 1s;
 }
 
 .must-reads img:hover {
@@ -11140,11 +11204,12 @@ body .admin a {
 .new .new-container img {
   filter: brightness(50%);
   box-shadow: 10px 10px 20px #000000;
+  transition: 1s;
 }
 
 .new .new-container img:hover {
   filter: brightness(100%);
-  transition: 0.2s;
+  transition: 0.5s;
 }
 
 .sponsor {
@@ -11158,11 +11223,14 @@ body .admin a {
 .sponsor i {
   font-size: 60px;
   color: white;
+  transition: 1s;
 }
 
 .sponsor i:hover {
   color: grey;
   transition: 0.2s;
+  transition: 0.5s ease;
+  transform: translate(0, -20px);
 }
 
 .credits {
@@ -11185,6 +11253,7 @@ body .admin a {
   color: white;
   padding-top: 50px;
   font-size: 20px;
+  margin-bottom: 20px;
 }
 
 .credits-container p {
@@ -11200,11 +11269,21 @@ body .admin a {
   font-weight: bold;
   color: white;
   text-decoration: none;
+  transition: 0.5s;
 }
 
 .credits-container .sign-up:hover {
   background-color: #0282F9;
   transition: 0.5s;
+}
+
+.links p {
+  line-height: 10px;
+}
+
+.links p:hover {
+  color: #0282F9;
+  text-decoration: none;
 }
 
 .social {
@@ -11219,7 +11298,7 @@ body .admin a {
 }
 
 .social .follow i:hover {
-  color: grey;
+  color: #0282F9;
 }
 
 .social .follow h1 {
@@ -11247,6 +11326,18 @@ body .admin a {
   padding: 20px;
   font-size: 20px;
   color: white;
+  transition: 1s;
+}
+
+.show h3:hover {
+  background-color: black;
+  transition: 1s;
+  box-shadow: 10px 10px 20px #000000;
+  border: 2px solid black;
+}
+
+.show h3 #price {
+  font-weight: bold;
 }
 
 .show img {

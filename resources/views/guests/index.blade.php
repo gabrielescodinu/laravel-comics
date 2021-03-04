@@ -9,6 +9,12 @@
 }
 </style>
 <div class="home">
+        <div class="social-side">
+            <a href=""><i class="fab fa-facebook-f"></i></a>
+            <a href=""><i class="fab fa-twitter"></i></a>
+            <a href=""><i class="fab fa-pinterest"></i></a>
+            <a href=""><i class="fas fa-plus"></i></a>
+        </div>
     <img height="400px" src="img/DC-logo-infinite.svg" alt="">    
 </div>
 

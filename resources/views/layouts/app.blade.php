@@ -46,10 +46,12 @@
                         <div class="menu">
                             <a class="nav-link" href="{{ url('/') }}">HOME</a>
                             <a class="nav-link" href="{{ route('posts') }}">COMICS</a>
-                            <a class="nav-link" href="">MOVIES</a>
-                            <a class="nav-link" href="">SHOP</a>
-                            <a class="nav-link" href="">GAMES</a>
+                            <a class="nav-link" href="{{ route('posts') }}">MOVIES</a>
+                            <a class="nav-link" href="{{ route('posts') }}">SHOP</a>
                             <a class="nav-link" href="{{route('admin.posts.index')}}">ADMIN</a>
+                            <div class="search">
+                                <input type="search" placeholder="Search..."> <i class="fa fa-search"></i>
+                            </div>                              
                         </div>
                         
                         @guest
@@ -97,24 +99,25 @@
                 <a href=""><i class="fas fa-map-marker-alt"></i></a>
             </div>
             <div class="credits">
-                <div class="credits-container dc-links">
-                    <div>
+                <div class="credits-container">
+                    <div class="links">
                         <h1>DC Comics</h1>
-                        <p>Characters</p>
-                        <p>Comics</p>
-                        <p>Movies</p>
-                        <p>Games</p>
+                        <a href=""><p>Characters</p></a>
+                        <a href=""><p>Comics</p></a>
+                        <a href=""><p>Movies</p></a>
+                        <a href=""><p>Games</p></a>
                     </div>
-                    <div>
-                        <h1>DC</h1>
-                        <p>Characters</p>
-                        <p>Comics</p>
+                    <div class="links">
+                        <h1>DC </h1>
+                        <a href=""><p>Characters</p></a>
+                        <a href=""><p>Comics</p></a>
+                        <a href=""><p>Movies</p></a>
                     </div>
-                    <div>
+                    <div class="links">
                         <h1>Sites</h1>
-                        <p>Characters</p>
-                        <p>Comics</p>
-                        <p>Movies</p>
+                        <a href=""><p>Characters</p></a>
+                        <a href=""><p>Comics</p></a>
+                        <a href=""><p>Movies</p></a>
                     </div>
                 </div>
                 <div class="credits-container social">

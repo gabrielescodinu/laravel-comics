@@ -43,9 +43,9 @@
                         <div class="menu">
                             <a class="nav-link" href="{{ url('/') }}">HOME</a>
                             <a class="nav-link" href="{{ route('posts') }}">COMICS</a>
-                            <a class="nav-link" href="">MOVIES</a>
-                            <a class="nav-link" href="">SHOP</a>
-                            <a class="nav-link" href="">GAMES</a>
+                            <a class="nav-link" href="{{ route('posts') }}">MOVIES</a>
+                            <a class="nav-link" href="{{ route('posts') }}">SHOP</a>
+                            <a class="nav-link" href="{{ route('posts') }}">GAMES</a>
                         </div>
                         @guest
                             <li class="nav-item">
