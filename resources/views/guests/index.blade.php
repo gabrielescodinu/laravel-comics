@@ -15,7 +15,7 @@
             <a href=""><i class="fab fa-pinterest"></i></a>
             <a href=""><i class="fas fa-plus"></i></a>
         </div>
-    <img height="400px" src="img/DC-logo-infinite.svg" alt="">    
+    <a href="{{ route('posts') }}"><img height="400px" src="img/DC-logo-infinite.svg" alt="">  </a>  
 </div>
 
 @endsection

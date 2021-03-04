@@ -61,6 +61,13 @@
     img {
         box-shadow: 10px 10px 20px #000000;
         padding: 50px;
+        transition: 1s;
+        &:hover {
+            filter: grayscale(100%);
+            transition: 0.2s;
+            transition: 1s ease;
+            transform: translate(0, -50px);
+        }
     }
 }  
 .comics {

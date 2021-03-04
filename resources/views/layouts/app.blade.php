@@ -121,7 +121,7 @@
                     </div>
                 </div>
                 <div class="credits-container social">
-                    <a class="sign-up" href="">SIGN UP NOW</a>
+                    <a class="sign-up" href="{{ route('register') }}">SIGN UP NOW</a>
                     <div class="follow">
                         <h1>FOLLOW US</h1>
                         <a href=""><i class="fab fa-instagram"></i></a>
