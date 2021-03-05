@@ -49,13 +49,6 @@ class PostController extends Controller
 
         $validatedData['cover'] = $cover;
         Post::create($validatedData);
-
-        $post = new Post;
-        $post->title = request('title');
-        $post->body = request('body');
-        $post->price = request('cover');
-        $post->price = request('price');
-        $post->save();
                         
         return redirect()->route('admin.posts.index');
     }
